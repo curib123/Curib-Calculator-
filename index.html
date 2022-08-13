@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+   <!-- calculator container -->
+   <div class="container">
+       <div class="display">
+           <input type="text" placeholder="Calculator" id="input" class="inputs" disabled />
+       </div>
+       <div class="input">
+           
+           <div class="row">
+               
+               <div class="line-1">
+               <ul>
+               <li><input type="button" value="AC" onclick="clearScreen()"></li>
+            <li><input type="button" value="DEL"onclick="deletes()"></li>
+            <li><input type="button" value="/"onclick="operator('/')"class="operation"></li>
+            <li><input type="button" value="*" onclick="operator('*')"class="operation"></li>
+               </ul>
+           </div>
+           </div>
+           <div class="row">
+               <div class="line-2">
+               <ul>
+            <li><input type="button" value="7"onclick="display('7')"></li>
+            <li><input type="button" value="8" onclick="display('8')"></li>
+            <li><input type="button" value="9" onclick="display('9')"></li>
+            <li><input type="button" value="-"onclick="operator('-')" class="operation"></li>
+               </ul>
+           </div>
+           </div>
+           <div class="row">
+               <div class="line-3">
+               <ul>
+            <li><input type="button" value="6"onclick="display('6')"></li>
+            <li><input type="button" value="5"onclick="display('5')"></li>
+            <li><input type="button" value="4"onclick="display('4')"></li>
+            <li><input type="button" value="+"onclick="operator('+')"class="operation"></li>
+               </ul>
+           </div>
+           </div>
+           <div class="row">
+               <div class="line-4">
+               <ul>
+            <li><input type="button" value="1" onclick="display('1')"></li>
+            <li><input type="button" value="2"onclick="display('2')"></li>
+            <li><input type="button" value="3"onclick="display('3')"></li>
+            <li><input type="button" value="=" class="equal-btn"onclick="calculates()"></li>
+               </ul>
+           </div>
+           </div>
+           <div class="row">
+               <div class="line-5">
+               <ul>
+            <li><input type="button" value="0"onclick="display('0')"></li>
+            <li><input type="button" value="."onclick="operator('.')"></li>
+               </ul>
+           </div>
+           </div>
+           
+       </div>
+   </div>
+   
+   <!-- script link nih -->
+   <script src="script.js"></script> 
+   <!-- end -->
+</body>
+</html>
