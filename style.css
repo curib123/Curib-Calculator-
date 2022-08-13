@@ -49,9 +49,7 @@ body{
     
    
 }
-span{
-    font-size: 0.1rem;
-}
+
 .container .input{
     display: block;
 }
@@ -65,7 +63,7 @@ span{
    
 }
 .container .input .row ul li input{
-    padding: 10px 23px;
+    padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
     background: inherit;
@@ -75,15 +73,15 @@ span{
 }
 
 .container .input .row .line-2 li input{
-    padding: 10px 28px;
+    padding: 10px 20px;
     margin-top: 20px;
 }
 .container .input .row .line-3 li input{
-   padding: 10px 25px;   
+   padding: 10px 20px;   
    margin-top: 20px;
 }
 .container .input .row .line-4 li input{
-   padding: 10px 28px;
+   padding: 10px 20px;
 }
 .container .input .row .line-5 li input{
     margin-left: 43px;
