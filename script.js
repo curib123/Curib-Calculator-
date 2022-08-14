@@ -2,15 +2,13 @@
 let input = document.querySelector('#input');
 
 function display(values){
-    
- input.value = input.value + values;
- 
-
+   
+   input.value = input.value + values;
 }
 function operator(value){
 
     
-    if(input.value.length > 1) {
+    if(input.value.length >= 1) {
        input.value = input.value + value;
     }else {
         input.value = null;
@@ -29,9 +27,7 @@ function calculates() {
      }else{
          input.placeholder = "Enter Value";
      }
-     
-     
-     
+      
     
 }
 function deletes() {
