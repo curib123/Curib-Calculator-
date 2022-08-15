@@ -1,5 +1,6 @@
 
 let input = document.querySelector('#input');
+let equalBtn = document.querySelector('#equal-btn');
 
 function display(values){
    
@@ -19,7 +20,7 @@ function clearScreen(){
     input.value = null;
 }
 function calculates() {
-     if(input.value.length > 0) {
+     if(input.value.length > 0 ) {
     let display = input.value;
     let results = eval(display);
     input.value = results;
@@ -28,12 +29,13 @@ function calculates() {
          input.placeholder = "Enter Value";
      }
       
-    
 }
 function deletes() {
   let inputLength = input.value.length - 1;
    input.value = input.value.substring(0,inputLength);
    
  }
- 
+ equalBtn.ondblclick = () => {
+     input.value = null;
+ }
  
